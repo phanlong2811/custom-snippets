@@ -3,6 +3,10 @@
         "prefix": "cpp",
         "body": [
             "#include \"bits/stdc++.h\"",
+            "#pragma GCC optimize(\"Ofast\")",
+            "// Make __builtin_popcount faster: https://codeforces.com/blog/entry/13134?#comment-736517",
+            "#pragma GCC target(\"popcnt\")",
+            "#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native\")",
             "using namespace std;",
             "",
             "#define FOR(i, l, r) for(int i = l; i <= r; ++i)",
@@ -19,6 +23,7 @@
             "    cout.tie(0);",
             "    return 0;",
             "}",
+            "",
             ""
         ],
         "description": "template"
