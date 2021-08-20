@@ -10,7 +10,6 @@
             "#define fi first",
             "#define se second",
             "#define bit(x, k) (1ll&((x) >> (k)))",
-            "#define debug(x) cerr << #x << \" = \" << x << '\\n';",
             "",
             "mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());",
             "",
