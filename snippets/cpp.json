@@ -26,10 +26,7 @@
             "    cout.tie(0);",
             "",
             "    return 0;",
-            "}",
-            "",
-            "",
-            ""
+            "}"
         ],
         "description": "template"
     },
