@@ -111,7 +111,7 @@
         ],
         "description": "debug"
     },
-    "intMod": {
+    "intmod": {
         "prefix": "intmod",
         "body": [
             "struct intMod {",
@@ -152,6 +152,6 @@
             "};",
             ""
         ],
-        "description": "intMod"
+        "description": "intmod"
     }
 }
