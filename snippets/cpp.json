@@ -112,7 +112,7 @@
         "description": "debug"
     },
     "intmod": {
-        "prefix": "intmod",
+        "prefix": "ii",
         "body": [
             "struct intMod {",
             "	const int mod = 998244353; // <-- change this",
