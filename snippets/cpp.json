@@ -150,8 +150,7 @@
             "	void operator ++ () {(*this) += 1;}",
             "	void operator -- () {(*this) -= 1;}",
             "};",
-            ""
         ],
-        "description": "divide for mod"
+        "description": "divide for mod",
     }
 }
