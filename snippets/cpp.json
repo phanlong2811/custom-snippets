@@ -27,7 +27,6 @@
             "",
             "    return 0;",
             "}"
-
         ],
         "description": "template"
     },
@@ -111,5 +110,47 @@
             ""
         ],
         "description": "debug"
+    },
+    "divide for mod": {
+        "prefix": "intmod",
+        "body": [
+            "struct intMod {",
+            "	const int mod = 998244353; // <-- change this",
+            "	int val;",
+            "	intMod(int val = 0): val(val) {};",
+            "	bool operator == (const intMod &a) const { return a.val == val; }",
+            "	bool operator != (const intMod &a) const { return a.val != val; }",
+            "	void operator = (const int &a) {val = a;}",
+            "	void operator = (const intMod &a) {val = a.val;}",
+            "	intMod operator + (const intMod &other) { ",
+            "		int ans = val + other.val;",
+            "		if(ans >= mod) ans -= mod; ",
+            "		return ans;",
+            "	}",
+            "	intMod operator - (const intMod &other) { ",
+            "		int ans = val - other.val; ",
+            "		if(ans < 0) ans += mod; ",
+            "		return ans;",
+            "	}",
+            "	intMod operator * (const intMod &other) {",
+            "		return (long long)val * other.val % mod;",
+            "	}",
+            "	intMod powMod(int x) const {",
+            "		intMod ans(1), cc(val); ",
+            "		for(; x > 0; x >>= 1, cc = cc * cc) {",
+            "			if (x & 1) ans = ans * cc;",
+            "		}",
+            "		return ans;",
+            "	}",
+            "	intMod operator / (const intMod &other) { ",
+            "		return intMod(val) * other.powMod(mod - 2);",
+            "	}",
+            "	void operator += (const intMod &other) {(*this) = (*this) + other.val;}",
+            "	void operator -= (const intMod &other) {(*this) = (*this) - other.val;}",
+            "	void operator ++ () {(*this) += 1;}",
+            "	void operator -- () {(*this) -= 1;}",
+            "};"
+        ],
+        "description": "divide for mod"
     }
 }
