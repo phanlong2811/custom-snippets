@@ -149,7 +149,8 @@
             "	void operator -= (const intMod &other) {(*this) = (*this) - other.val;}",
             "	void operator ++ () {(*this) += 1;}",
             "	void operator -- () {(*this) -= 1;}",
-            "};"
+            "};",
+            ""
         ],
         "description": "divide for mod"
     }
