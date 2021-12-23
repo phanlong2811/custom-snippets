@@ -2,7 +2,7 @@
     "template": {
         "prefix": "cpp",
         "body": [
-            "#include \"bits/stdc++.h\"",
+            "#include <bits/stdc++.h>",
             "",
             "#pragma GCC optimize(\"Ofast\")",
             "// Make __builtin_popcount faster: https://codeforces.com/blog/entry/13134?#comment-736517",
