@@ -11,12 +11,16 @@
             "",
             "#ifdef phanlong2811",
             "    #include <cp/debug.h>",
+            "#else",
+            "    #define debug(...)",
+            "    #define PR(...)",
+            "    #define PR0(...)",
             "#endif",
             "",
             "using namespace std;",
             "",
-            "#define FOR(i, l, r) for(int i = l; i <= r; ++i)",
-            "#define FOD(i, r, l) for(int i = r; i >= l; --i)",
+            "#define FOR(i, l, r) for(int i = (l); i <= (r); ++i)",
+            "#define FOD(i, r, l) for(int i = (r); i >= (l); --i)",
             "#define fi first",
             "#define se second",
             "#define bit(x, k) (1ll&((x) >> (k)))",
@@ -31,7 +35,8 @@
                 "    cin.tie(0);",
                 "",
                 "    return 0;",
-                "}"
+                "}",
+                ""
         ],
         "description": "template"
     },
