@@ -6,6 +6,7 @@
             "",
             "#ifdef phanlong2811",
             "    #include <cp/debug.h>",
+            "#endif",
             "",
             "using namespace std;",
             "",
